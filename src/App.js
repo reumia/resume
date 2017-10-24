@@ -1,24 +1,30 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import data from './data'
 import moment from 'moment'
 import 'moment/locale/ko'
 
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+/**
+ * TODO : 개발블로그 RSS 최근글 세개 연결
+ * TODO : data.js Github Page 활용을 위한 Markdown 전환 고려
+ */
+
 class App extends Component {
     profile = data.profile
-    startAt = `${moment(data.resume.startAt).fromNow(true)} 차`
+    resume = data.resume
+
+    workedYears = `${moment(this.resume.startAt).fromNow(true)} 차`
 
     render () {
         return (
             <div className="app">
-                <header className="app-header">
-                    <h1 className="title">{ this.profile.name }</h1>
-                </header>
+                <Header className="app-header" profile={this.profile} />
                 <main className="app-body">
-                    { this.startAt }
+                    { this.workedYears }
                 </main>
-                <footer className="app-footer">
-
-                </footer>
+                <Footer className="app-footer" />
             </div>
         )
     }
