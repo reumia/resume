@@ -1,0 +1,23 @@
+/* Fonts */
+
+$font-family: sans-serif;
+$font-size: 16px;
+$font-size-larger: 18px;
+$font-size-largest: 24px;
+$font-size-smaller: 14px;
+$font-size-smallest: 12px;
+$line-height: 1.4;
+
+/* Colors */
+
+$color-background: #fff;
+$color-background-darker: #f3f3f3;
+$color-text: #333;
+$color-text-lighter: lighten($color-text, 30);
+$color-brand: blue;
+
+/* Units */
+
+$space-unit: 16px;
+$radius-unit: 4px;
+$shadow-unit: 0 4px 0 transparentize($color-text, .9);

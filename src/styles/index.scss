@@ -1,0 +1,58 @@
+@import '../../node_modules/reset-css/reset';
+@import './variables';
+
+/* Common */
+
+html {
+  background-color: $color-background-darker;
+}
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+
+/* App */
+
+.app {
+  margin: ($space-unit * 2) auto;
+  padding: 0 ($space-unit * 2);
+  max-width: $space-unit * 32;
+  color: $color-text;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+.app-header {
+  overflow: hidden;
+  margin: ($space-unit * 2) auto;
+  border-radius: $radius-unit;
+  background-color: $color-background;
+  box-shadow: $shadow-unit;
+}
+.app-body {
+
+}
+.app-footer {
+
+}
+
+/* Header */
+
+.header-title {
+  padding: $space-unit;
+  background-color: $color-brand;
+  color: $color-background;
+  font-size: $font-size-larger;
+  font-weight: bold;
+}
+.header-contents {
+  padding: $space-unit;
+}
+
+/* Footer */
+
+/* Card */
+
+.card {
+
+}
