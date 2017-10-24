@@ -55,7 +55,7 @@ export default {
                 'url': 'http://www.ifkiller.com',
                 'role': [ 'Front-end Dev.' ],
                 'skills': [ 'Handlebars', 'VanillaJS', 'Webpack', 'SCSS' ],
-                'descriptions': ''
+                'descriptions': '이프킬러는'
             },
             {
                 'name': 'Discordee',
