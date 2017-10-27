@@ -62,9 +62,10 @@ a {
 .header-buttons {
   display: flex;
   justify-content: center;
-  margin-top: $space-unit * 1.5;
+  margin-top: $space-unit;
 }
 .header-button {
+  @include transitions (color);
   padding: 0 ($space-unit / 2);
   color: $color-text-lighter;
   &:hover {

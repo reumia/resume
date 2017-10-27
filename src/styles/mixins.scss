@@ -13,3 +13,13 @@
     @content;
   }
 }
+
+@mixin transitions ($transitions...) {
+  $values: ();
+
+  @each $transition in $transitions {
+    $values: join($transition + ' ' + $transition-unit, $values, comma);
+  }
+
+  transition: $values;
+}
