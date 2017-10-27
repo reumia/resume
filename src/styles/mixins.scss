@@ -1,0 +1,15 @@
+/* Mixins */
+
+@mixin mask () {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid rgba(0,0,0,.2);
+    @content;
+  }
+}

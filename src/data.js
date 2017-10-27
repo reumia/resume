@@ -3,19 +3,17 @@ export default {
         name: '조현석',
         email: 'reumia@gmail.com',
         image: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAyzAAAAJDEwODBjMTc4LTRhYWUtNGIxNS04NmYzLWE1MmNkYmMwN2U3Mw.jpg',
-        sites: [
-            {
-                'name': '개발블로그',
-                'url': 'https://dev.zzoman.com'
-            }
-        ],
         socials: [
             {
-                'name': 'github',
+                'name': 'Blog',
+                'url': 'https://dev.zzoman.com'
+            },
+            {
+                'name': 'Github',
                 'url': 'https://github.com/reumia'
             },
             {
-                'name': 'linkedin',
+                'name': 'LinkedIn',
                 'url': 'https://www.linkedin.com/in/hyunsuk-jo-87128310a/'
             },
             {

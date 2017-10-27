@@ -14,10 +14,11 @@ $color-background: #fff;
 $color-background-darker: #f3f3f3;
 $color-text: #333;
 $color-text-lighter: lighten($color-text, 30);
+$color-text-lightest: lighten($color-text, 50);
 $color-brand: blue;
 
 /* Units */
 
 $space-unit: 16px;
 $radius-unit: 4px;
-$shadow-unit: 0 4px 0 transparentize($color-text, .9);
+$shadow-unit: 0 2px 8px transparentize(#000, .8);

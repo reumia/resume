@@ -1,18 +1,20 @@
 import React from 'react'
 
-const Header = ({ profile, className }) => (
-    <header className={ className }>
-        <h1 className="header-title">Resume</h1>
-        <div className="header-contents">
-            <div className="texts">
-                { profile.name }
-                { profile.email }
-            </div>
-            <div className="image">
+const Header = ({ profile, className }) => {
+    const buttons = profile.socials.map((item, key) => {
+        return <a href={ item.url } className="header-button" key={ key }>{ item.name }</a>
+    })
 
+    return (
+        <header className={ className }>
+            <div className="header-profile" style={{ backgroundImage: `url(${profile.image})` }}/>
+            <h1 className="header-title">{ profile.name }</h1>
+            <div className="header-email">{ profile.email }</div>
+            <div className="header-buttons">
+                { buttons }
             </div>
-        </div>
-    </header>
-)
+        </header>
+    )
+}
 
 export default Header
