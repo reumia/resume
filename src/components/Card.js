@@ -1,6 +1,8 @@
 import React from 'react'
 import _ from 'lodash'
 
+import Item from './Item'
+
 const Card = ({ data }) => {
     const renderLink = string => {
         if (string) return <a href={ string } className="link">{ string }</a>
@@ -15,19 +17,9 @@ const Card = ({ data }) => {
             contents = _.map(contentsData, (item, key) => {
                 if (Array.isArray(item)) {
                     let array = item.map((value, index) => <span className="text" key={ index }>{ value }</span>)
-                    return (
-                        <div className="item" key={ key }>
-                            <div className="item-title">{ key }</div>
-                            <div className="item-contents">{ array }</div>
-                        </div>
-                    )
+                    return <Item key={ key } value={ array } title={ key } />
                 } else {
-                    if (item.length > 0) return (
-                        <div className="item" key={ key }>
-                            <div className="item-title">{ key }</div>
-                            <div className="item-contents">{ item }</div>
-                        </div>
-                    )
+                    if (item.length > 0) return <Item key={ key } value={ item } title={ key }/>
                     else return false
                 }
             })
