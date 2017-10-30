@@ -66,6 +66,10 @@ a {
   font-size: $font-size-largest;
   font-weight: bold;
 }
+.profile-since {
+  margin-top: $space-unit / 4;
+  font-size: $font-size-smallest;
+}
 .profile-descriptions {
   margin-top: $space-unit;
   text-align: justify;

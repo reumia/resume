@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import data from './data'
-import moment from 'moment'
+import _ from 'lodash'
 import 'moment/locale/ko'
 
 import Header from './components/Header'
@@ -15,16 +15,17 @@ import Cards from './components/Cards'
 class App extends Component {
     profile = data.profile
     resume = data.resume
-    workedYears = moment(this.resume.startAt).fromNow(true)
+
+    resumes = _.map(this.resume, (value, key) => {
+        return <Cards key={ key } title={ key } data={ value } />
+    })
 
     render () {
         return (
             <div className="app">
                 <Header className="app-header" profile={this.profile} />
                 <main className="app-body">
-                    <Cards title={`경력 : ${this.workedYears}차`} data={ this.resume.companies } />
-                    <Cards title="참여 프로젝트" data={ this.resume.projects } />
-                    <Cards title="개인 프로젝트" data={ this.resume.personals } />
+                    { this.resumes }
                 </main>
                 <Footer className="app-footer" />
             </div>
