@@ -5,6 +5,10 @@ export default {
         image: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAyzAAAAJDEwODBjMTc4LTRhYWUtNGIxNS04NmYzLWE1MmNkYmMwN2U3Mw.jpg',
         socials: [
             {
+                'name': 'Email',
+                'url': 'mailto:reumia@gmail.com'
+            },
+            {
                 'name': 'Blog',
                 'url': 'https://dev.zzoman.com'
             },

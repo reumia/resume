@@ -8,8 +8,12 @@ html {
   background-color: $color-background-darker;
 }
 a {
+  @include transitions (color);
   color: $color-text;
   text-decoration: none;
+  &:hover {
+    color: $color-brand;
+  }
 }
 
 /* App */
@@ -21,26 +25,32 @@ a {
   line-height: $line-height;
 }
 .app-header {
+  @include mask() {
+    border-width: 0;
+    background: linear-gradient(mix($color-brand, $color-background-darker, 9), mix($color-brand, $color-background-darker, 5) 10%, $color-background-darker 40%);
+  }
   padding: ($space-unit * 3) 0;
-  background-color: $color-text;
-  color: $color-background;
 }
 .app-body {
-  margin: ($space-unit * 4) auto;
+  margin: ($space-unit * 3) auto;
   padding: 0 ($space-unit * 2);
   max-width: $space-unit * 32;
 }
 .app-footer {
   margin: ($space-unit * 4) 0;
 }
-.app-header,
-.app-footer {
+
+/* Profile */
+
+.profile-image,
+.profile-title,
+.profile-email,
+.profile-buttons {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
-
-/* Header */
-
-.header-profile {
+.profile-image {
   display: block;
   margin: 0 auto;
   width: $space-unit * 10;
@@ -51,32 +61,30 @@ a {
   background-position: center center;
   box-shadow: $shadow-unit;
 }
-.header-title {
+.profile-title {
   margin-top: $space-unit * 2;
   font-size: $font-size-largest;
   font-weight: bold;
 }
-.header-email {
+.profile-email {
   color: $color-text-lightest;
 }
-.header-buttons {
+.profile-buttons {
   display: flex;
   justify-content: center;
   margin-top: $space-unit;
 }
-.header-button {
-  @include transitions (color);
+.profile-button {
   padding: 0 ($space-unit / 2);
   color: $color-text-lighter;
-  &:hover {
-    color: $color-background;
-  }
 }
-.header-button + .header-button:before {
-  content: '/';
+.profile-button + .profile-button:before {
+  content: '|';
   margin: 0 ($space-unit / 2) 0 ($space-unit / -2);
   font-size: $font-size-smaller;
   color: $color-text-lighter;
+  vertical-align: 1px;
+  opacity: .3;
 }
 
 /* Footer */
@@ -88,6 +96,22 @@ a {
 
 /* Card */
 
+.cards-wrap {
+  margin: ($space-unit * 2) auto;
+}
+.cards-title {
+  margin-bottom: $space-unit / 2;
+  color: $color-text-lightest;
+  font-size: $font-size-smaller;
+}
+.cards {
+  background-color: $color-background;
+  border-radius: $radius-unit;
+  box-shadow: $shadow-unit;
+}
 .card {
-
+  padding: $space-unit;
+}
+.card ~ .card {
+  border-top: 1px solid $color-background-darker;
 }

@@ -15,15 +15,15 @@ import Cards from './components/Cards'
 class App extends Component {
     profile = data.profile
     resume = data.resume
-
-    workedYears = `${moment(this.resume.startAt).fromNow(true)} 차`
+    workedYears = moment(this.resume.startAt).fromNow(true)
 
     render () {
         return (
             <div className="app">
                 <Header className="app-header" profile={this.profile} />
                 <main className="app-body">
-                    { this.workedYears }
+                    <Cards title={`경력 : ${this.workedYears}차`} data={ this.resume.companies } />
+                    <Cards title="참여 프로젝트" data={ this.resume.projects } />
                     <Cards title="개인 프로젝트" data={ this.resume.personals } />
                 </main>
                 <Footer className="app-footer" />
