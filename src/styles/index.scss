@@ -10,7 +10,6 @@ html {
 a {
   @include transitions (color);
   color: $color-text;
-  text-decoration: none;
   &:hover {
     color: $color-brand;
   }
@@ -19,39 +18,35 @@ a {
 /* App */
 
 .app {
+  @include mask() {
+    border-width: 0;
+    height: 300px;
+    background: linear-gradient(mix($color-brand, $color-background-darker, 9), mix($color-brand, $color-background-darker, 5) 10%, $color-background-darker 40%);
+  }
+  overflow: hidden;
   color: $color-text;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
 }
-.app-header {
-  @include mask() {
-    border-width: 0;
-    background: linear-gradient(mix($color-brand, $color-background-darker, 9), mix($color-brand, $color-background-darker, 5) 10%, $color-background-darker 40%);
-  }
-  padding: ($space-unit * 3) 0;
-}
+.app-header,
 .app-body {
-  margin: ($space-unit * 3) auto;
+  margin: ($space-unit * 2) auto;
   padding: 0 ($space-unit * 2);
   max-width: $space-unit * 32;
 }
 .app-footer {
   margin: ($space-unit * 4) 0;
+  text-align: center;
 }
 
 /* Profile */
 
-.profile-image,
-.profile-title,
-.profile-descriptions,
-.profile-buttons {
+.profile {
   position: relative;
   z-index: 1;
-  text-align: center;
 }
 .profile-image {
-  display: block;
   margin: 0 auto;
   width: $space-unit * 10;
   height: $space-unit * 10;
@@ -60,6 +55,11 @@ a {
   background-size: cover;
   background-position: center center;
   box-shadow: $shadow-unit;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 0;
+    left: $space-unit * -13;
+  }
 }
 .profile-title {
   margin-top: $space-unit * 2;
@@ -68,23 +68,22 @@ a {
 }
 .profile-descriptions {
   margin-top: $space-unit;
+  text-align: justify;
 }
 .profile-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: $space-unit;
 }
 .profile-button {
-  padding: 0 ($space-unit / 2);
-  color: $color-text-lighter;
+  color: $color-text-lightest;
+  text-decoration: none;
 }
 .profile-button + .profile-button:before {
-  content: '|';
-  margin: 0 ($space-unit / 2) 0 ($space-unit / -2);
+  content: ',';
+  margin-right: $space-unit / 2;
   font-size: $font-size-smaller;
-  color: $color-text-lighter;
-  vertical-align: 1px;
-  opacity: .3;
+  color: $color-text-lightest;
 }
 
 /* Footer */
@@ -105,13 +104,56 @@ a {
   font-size: $font-size-smaller;
 }
 .cards {
-  background-color: $color-background;
-  border-radius: $radius-unit;
-  box-shadow: $shadow-unit;
 }
 .card {
   padding: $space-unit;
+  background-color: $color-background;
+  font-size: $font-size-smaller;
+  box-shadow: $shadow-unit;
 }
 .card ~ .card {
-  border-top: 1px solid $color-background-darker;
+  margin-top: $space-unit / 2;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title {
+    font-weight: bold;
+  }
+  .link {
+    display: inline-block;
+    color: $color-text-lightest;
+    font-size: $font-size-smallest;
+  }
+}
+.card-contents {
+  display: block;
+  .item {
+    margin-top: $space-unit / 4;
+    &:first-child {
+      margin-top: $space-unit;
+    }
+  }
+  .item ~ .item {
+    padding-top: $space-unit / 4;
+    border-top: 1px dashed $color-background-darker;
+  }
+  .item-title {
+    margin: ($space-unit / 2) 0 ($space-unit / 4);
+    color: $color-text-lightest;
+    font-size: $font-size-smallest;
+    text-transform: capitalize;
+  }
+  .text {
+    display: inline-block;
+    &:after {
+      content: ',';
+      display: inline-block;
+      margin-right: $space-unit / 4;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
 }

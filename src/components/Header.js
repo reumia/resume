@@ -7,11 +7,13 @@ const Header = ({ profile, className }) => {
 
     return (
         <header className={ className }>
-            <div className="profile-image" style={{ backgroundImage: `url(${profile.image})` }}/>
-            <h1 className="profile-title">{ profile.name }</h1>
-            <div className="profile-descriptions">{ profile.descriptions }</div>
-            <div className="profile-buttons">
-                { buttons }
+            <div className="profile">
+                <div className="profile-image" style={{ backgroundImage: `url(${profile.image})` }}/>
+                <h1 className="profile-title">{ profile.name }</h1>
+                <div className="profile-descriptions" dangerouslySetInnerHTML={{ __html: profile.descriptions }} />
+                <div className="profile-buttons">
+                    { buttons }
+                </div>
             </div>
         </header>
     )
