@@ -44,7 +44,7 @@ a {
 
 .profile-image,
 .profile-title,
-.profile-email,
+.profile-descriptions,
 .profile-buttons {
   position: relative;
   z-index: 1;
@@ -66,8 +66,8 @@ a {
   font-size: $font-size-largest;
   font-weight: bold;
 }
-.profile-email {
-  color: $color-text-lightest;
+.profile-descriptions {
+  margin-top: $space-unit;
 }
 .profile-buttons {
   display: flex;

@@ -1,7 +1,7 @@
 export default {
     profile: {
         name: '조현석',
-        email: 'reumia@gmail.com',
+        descriptions: 'Front-end 주력의 JavaScript 개발자입니다. Naver 서비스의 Markup을 통해 HTML/SCSS의 차별화된 전문성을 쌓았으며, Vue/React 등의 Modern View Framework의 경험과 Back-end와의 협업, Node.js기반의 Express 서버 개발과 Client 도구개발 등 JavaScript 생태계의 폭 넓은 경험을 보유하고 있습니다.',
         image: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAyzAAAAJDEwODBjMTc4LTRhYWUtNGIxNS04NmYzLWE1MmNkYmMwN2U3Mw.jpg',
         socials: [
             {
