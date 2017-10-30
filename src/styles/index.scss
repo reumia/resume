@@ -110,6 +110,7 @@ a {
 .cards {
 }
 .card {
+  border-radius: $radius-unit;
   padding: $space-unit;
   background-color: $color-background;
   font-size: $font-size-smaller;
