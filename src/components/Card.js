@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 
 import Item from './Item'
+import List from './ItemList'
 
 const Card = ({ data }) => {
     const renderLink = string => {
@@ -11,7 +12,7 @@ const Card = ({ data }) => {
 
     const renderContents = () => {
         let contents;
-        const contentsData = _.omit(data, [ 'name', 'url' ])
+        const contentsData = _.omit(data, [ 'name', 'url', 'descriptions' ])
 
         if (contentsData) {
             contents = _.map(contentsData, (item, key) => {
@@ -28,6 +29,13 @@ const Card = ({ data }) => {
         } else return false
     }
 
+    const renderDescriptions = () => {
+        const contents = data.descriptions
+
+        if (contents && contents.length > 0) return <List value={ contents } title='descriptions' />
+        else return false
+    }
+
     return (
         <div className="card">
             <div className="card-title">
@@ -36,6 +44,7 @@ const Card = ({ data }) => {
             </div>
             <div className="card-contents">
                 { renderContents() }
+                { renderDescriptions() }
             </div>
         </div>
     )

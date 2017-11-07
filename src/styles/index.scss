@@ -142,13 +142,25 @@ a {
   }
   .item ~ .item {
     padding-top: $space-unit / 4;
-    border-top: 1px dashed $color-background-darker;
+    border-top: 1px solid $color-background-darkest;
   }
   .item-title {
-    margin: ($space-unit / 2) 0 ($space-unit / 4);
+    float: left;
+    margin-right: $space-unit;
     color: $color-text-lightest;
-    font-size: $font-size-smallest;
     text-transform: capitalize;
+  }
+  .item-contents {
+    overflow: auto;
+  }
+  .item-list {
+    overflow: auto;
+    padding-top: $space-unit / 8;
+    font-size: $font-size-smallest;
+  }
+  .item-list-item ~ .item-list-item {
+    padding-top: $space-unit / 4;
+    border-top: 1px solid $color-background-darkest;
   }
   .text {
     display: inline-block;
