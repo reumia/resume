@@ -23,7 +23,7 @@ Run the development server and check the UI through the browser.
 개발용 서버를 실행하고, 브라우저를 통해 UI를 확인합니다.
 
 ```bash
-# open browser with 'http://localhost:3000'
+# It will open browser automatically after the following command is input.
 $ yarn start 
 ```
 
