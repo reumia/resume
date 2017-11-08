@@ -153,7 +153,6 @@ export default {
                 'company': 'Freeneo',
                 'roles': [ 'Front-end Dev.' ],
                 'skills': [ 'PHP', 'jQuery', 'SCSS', 'Web Accessibility' ],
-                'url': 'https://goo.gl/cKJz2F',
                 'descriptions': [
                     '한국웹접근성평가원 KWACC 인증 마크 획득'
                 ]
