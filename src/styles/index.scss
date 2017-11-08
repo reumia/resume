@@ -121,20 +121,24 @@ a {
 }
 .card-title {
   display: flex;
+  margin-bottom: $space-unit / 4;
   justify-content: space-between;
   align-items: center;
   .title {
     font-weight: bold;
   }
   .link {
+    overflow: hidden;
     display: inline-block;
     color: $color-text-lightest;
     font-size: $font-size-smallest;
+    max-width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 .card-contents {
   display: block;
-  margin-top: $space-unit;
   .item {
     display: table-row;
     margin-top: $space-unit / 4;
@@ -142,14 +146,9 @@ a {
       margin-top: 0;
     }
   }
-  .item ~ .item {
-    padding-top: $space-unit / 4;
-    border-top: 1px solid $color-background-darkest;
-  }
   .item-title,
   .item-contents {
     display: table-cell;
-    padding: ($space-unit / 8) 0;
   }
   .item-title {
     padding-right: $space-unit;
