@@ -28,6 +28,14 @@ export default {
         ]
     },
     resume: {
+        experiences: [
+            {
+                'Front-end': [ 'sdasd' ],
+                'Back-end': [ 'Node.js', 'Express', 'mySQL', 'node-orm2' ],
+                'Tools': [ 'asd' ],
+                'Platform': [ 'Firebase', 'Heroku' ]
+            }
+        ],
         companies: [
             {
                 'name': 'SK Techx',
@@ -44,7 +52,7 @@ export default {
         ],
         projects: [
             {
-                'name': '통합 운송 시스템 어플리케이션 웹뷰, 백오피스, 소개 웹사이트 개발',
+                'name': '카셰어링 서비스 어플리케이션 웹뷰, 웹서비스, 백오피스 개발',
                 'company': 'SK Techx',
                 'roles': [ 'Front-end Dev.' ],
                 'skills': [ 'Handlebars', 'React', 'Redux', 'D3', 'SSR', 'Webpack', 'SCSS' ],
@@ -53,10 +61,8 @@ export default {
                     '프로젝트 성격에 따라 크로스 브라우징 환경 고려한 Webpack 버전 차등 구축.',
                     'Webpack-dev-server 적용으로 Front-end 로컬 개발환경 개선',
                     'ESLint, StyleLint 통한 코딩 컨벤션 자동화로 외주 협업을 위한 개발 가이드 구축',
-                    'T Map 지도 라이브러리 활용 차량 모니터링 UI 구현',
                     'D3 라이브러리 C3.js 활용 간단한 통계용 UI 구현',
-                    '다양한 결제수단(신용카드, 쿠폰, 포인트)이 개입되는 예약 UI의 안정적인 구성을 위해 ES6 Class 활용한 Redux',
-                    '개발완료 이후 운영, 유지보수 편의를 위해 기존 Handlebars로 제작된 앱내 웹뷰 페이지를 React, Redux, Server Side Rendering 을 적용한 SPA 구조로 재개발.'
+                    '개발완료 이후 운영, 유지보수 편의를 위해 기존 Handlebars로 제작된 앱내 웹뷰 페이지를 React, Redux, SSR 적용 SPA로 재개발.'
                 ]
             },
             {
@@ -83,27 +89,23 @@ export default {
         ],
         personals: [
             {
+                'name': 'Discordee',
+                'url': 'http://www.discordee.com',
+                'roles': [ 'Front-end Dev.', 'Back-end Dev.', 'Design' ],
+                'skills': [ 'Firebase', 'Heroku', 'React', 'Redux', 'Express', 'Webpack', 'Oauth2', 'i18n', 'SCSS' ],
+                'descriptions': []
+            },
+            {
                 'name': 'ifKiller',
                 'url': 'http://www.ifkiller.com',
                 'roles': [ 'Front-end Dev.' ],
-                'skills': [ 'Handlebars', 'VanillaJS', 'Webpack', 'SCSS' ],
+                'skills': [ 'Handlebars', 'jQuery', 'Webpack', 'SCSS' ],
                 'descriptions': [
                     '이프킬러는'
                 ]
             },
             {
-                'name': 'Discordee',
-                'url': 'http://www.discordee.com',
-                'roles': [ 'Front-end Dev.', 'Back-end Dev.', 'Design' ],
-                'skills': [ 'SPA', 'Firebase', 'Heroku', 'React', 'Redux', 'Express', 'Webpack', 'Oauth2', 'i18n', 'SCSS' ],
-                'descriptions': []
-            },
-            {
-                'name': 'SagakSagak',
-                'url': 'https://www.sagaks.com',
-                'roles': [ 'Front-end Dev.', 'Back-end Dev.', 'Design' ],
-                'skills': [ 'SPA', 'AWS', 'Vue', 'Redux', 'Express', 'mySql', 'ORM', 'Webpack', 'SCSS' ],
-                'descriptions': []
+                'name': 'Theme for Hexo the Static-blog-generator'
             }
         ]
     }

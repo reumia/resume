@@ -6,7 +6,8 @@ const locales = {
         'company': 'company',
         'roles': 'roles',
         'skills': 'skills',
-        'descriptions': 'descriptions'
+        'descriptions': 'descriptions',
+        'experiences': 'experiences'
     },
     'ko': {
         'companies': '경력',
@@ -15,7 +16,8 @@ const locales = {
         'company': '회사',
         'roles': '역할',
         'skills': '기술',
-        'descriptions': '상세'
+        'descriptions': '상세',
+        'experiences': '경험'
     }
 }
 

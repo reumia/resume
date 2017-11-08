@@ -16,13 +16,7 @@ const Card = ({ data }) => {
 
         if (contentsData) {
             contents = _.map(contentsData, (item, key) => {
-                if (Array.isArray(item)) {
-                    let array = item.map((value, index) => <span className="text" key={ index }>{ value }</span>)
-                    return <Item key={ key } value={ array } title={ key } />
-                } else {
-                    if (item.length > 0) return <Item key={ key } value={ item } title={ key }/>
-                    else return false
-                }
+                return <Item key={ key } value={ item } title={ key } />
             })
 
             return contents

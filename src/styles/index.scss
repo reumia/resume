@@ -134,21 +134,28 @@ a {
 }
 .card-contents {
   display: block;
+  margin-top: $space-unit;
   .item {
+    display: table-row;
     margin-top: $space-unit / 4;
     &:first-child {
-      margin-top: $space-unit;
+      margin-top: 0;
     }
   }
   .item ~ .item {
     padding-top: $space-unit / 4;
     border-top: 1px solid $color-background-darkest;
   }
+  .item-title,
+  .item-contents {
+    display: table-cell;
+    padding: ($space-unit / 8) 0;
+  }
   .item-title {
-    float: left;
-    margin-right: $space-unit;
+    padding-right: $space-unit;
     color: $color-text-lighter;
     text-transform: capitalize;
+    white-space: nowrap;
   }
   .item-contents {
     overflow: auto;
