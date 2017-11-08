@@ -23,7 +23,17 @@ const locales = {
 
 const LocaleString = ({ string }) => {
     let locale = window.navigator.language
-    if (typeof locales[locale] === 'undefined') locale = 'en'
+
+    switch (locale) {
+        case 'ko':
+        case 'ko-kr':
+        case 'ko-KR':
+            locale = 'ko'
+            break;
+        default:
+            locale = 'en'
+            break
+    }
 
     const localedString = locales[locale][string]
     if (typeof localedString !== 'undefined') return localedString
