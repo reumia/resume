@@ -138,17 +138,6 @@ export default {
                 ]
             },
             {
-                'name': '여행랜드사 웹솔루션 Backoffice UI 개편',
-                'company': 'Freeneo',
-                'roles': [ 'Front-end Dev.', 'Design' ],
-                'skills': [ 'PHP', 'jQuery', 'SCSS' ],
-                'url': 'https://goo.gl/cKJz2F',
-                'descriptions': [
-                    '인쇄하여 송장으로 사용할 수 있는 구조의 동적인 Table UI 기획 및 개발',
-                    'Bootstrap UI Framework 활용한 브랜드 UI 가이드 작성'
-                ]
-            },
-            {
                 'name': 'Sheraton 인천 웹사이트 개발',
                 'company': 'Freeneo',
                 'roles': [ 'Front-end Dev.' ],
