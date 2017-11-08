@@ -147,20 +147,26 @@ a {
   .item-title {
     float: left;
     margin-right: $space-unit;
-    color: $color-text-lightest;
+    color: $color-text-lighter;
     text-transform: capitalize;
   }
   .item-contents {
     overflow: auto;
   }
-  .item-list {
-    overflow: auto;
-    padding-top: $space-unit / 8;
-    font-size: $font-size-smallest;
+  .list {
+    margin-top: $space-unit;
   }
-  .item-list-item ~ .item-list-item {
-    padding-top: $space-unit / 4;
-    border-top: 1px solid $color-background-darkest;
+  .list-title {
+    @extend %replacement;
+  }
+  .list-contents {
+    padding-left: $space-unit;
+  }
+  .list-item {
+    list-style: disc;
+  }
+  .list-item ~ .list-item {
+    padding-top: $space-unit / 8;
   }
   .text {
     display: inline-block;

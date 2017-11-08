@@ -24,3 +24,16 @@ $space-unit: 16px;
 $radius-unit: 4px;
 $shadow-unit: 0 2px 0 transparentize(#000, .95);
 $transition-unit: ease 0.2s;
+
+/* Extends */
+
+%replacement {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

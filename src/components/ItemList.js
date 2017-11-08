@@ -4,15 +4,15 @@ import LocaleString from './LocaleString'
 
 const ItemList = ({ value, title }) => {
     const listItems = value.map((item, key) => {
-        return <li className="item-list-item" key={ key }>{ item }</li>
+        return <li className="list-item" key={ key }>{ item }</li>
     })
 
     return (
-        <div className="item">
-            <div className="item-title">
+        <div className="list">
+            <div className="list-title">
                 <LocaleString string={ title }/>
             </div>
-            <ul className="item-list">{ listItems }</ul>
+            <ul className="list-contents">{ listItems }</ul>
         </div>
     )
 }
