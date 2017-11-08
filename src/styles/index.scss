@@ -132,15 +132,6 @@ a {
   .title {
     font-weight: bold;
   }
-  .link {
-    overflow: hidden;
-    display: inline-block;
-    color: $color-text-lightest;
-    font-size: $font-size-smallest;
-    max-width: 150px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
 }
 .card-contents {
   display: block;
@@ -157,7 +148,7 @@ a {
   }
   .item-title {
     padding-right: $space-unit;
-    color: $color-text-lighter;
+    color: $color-text-lightest;
     text-transform: capitalize;
     white-space: nowrap;
   }
@@ -189,5 +180,8 @@ a {
     &:last-child:after {
       display: none;
     }
+  }
+  .text-bold {
+    font-weight: bold;
   }
 }

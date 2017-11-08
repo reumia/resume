@@ -1,5 +1,7 @@
 const locales = {
     'en': {
+        'name': 'name',
+        'url': 'url',
         'companies': 'companies',
         'projects': 'projects',
         'personals': 'personals',
@@ -10,6 +12,8 @@ const locales = {
         'experiences': 'experiences'
     },
     'ko': {
+        'name': '이름',
+        'url': '링크',
         'companies': '경력',
         'projects': '대표 프로젝트',
         'personals': '개인 프로젝트',

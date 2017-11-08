@@ -7,7 +7,7 @@ import List from './ItemList'
 const Card = ({ data }) => {
     const renderContents = () => {
         let contents;
-        const contentsData = _.omit(data, [ 'name', 'url', 'descriptions' ])
+        const contentsData = _.omit(data, [ 'descriptions' ])
 
         if (contentsData) {
             contents = _.map(contentsData, (item, key) => {
@@ -25,19 +25,9 @@ const Card = ({ data }) => {
         else return false
     }
 
-    const renderTitle = () => {
-        if (data.name) return (
-            <div className="card-title">
-                <span className="title">{ data.name }</span>
-                <a href={ data.url } className="link">{ data.url }</a>
-            </div>
-        )
-    }
-
     /* TODO : 제목 분기 필요 */
     return (
         <div className="card">
-            { renderTitle() }
             <div className="card-contents">
                 { renderContents() }
                 { renderDescriptions() }

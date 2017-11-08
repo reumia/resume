@@ -8,7 +8,9 @@ const Item = ({ value, title }) => {
     if (Array.isArray(value)) {
         texts = value.map((item, index) => <span className="text" key={ index }>{ item }</span>)
     } else {
-        texts = value
+        if (title === 'name') texts = <span className="text-bold">{ value }</span>
+        else if (title === 'url') texts = <a className="text-link" href={ value }>{ value }</a>
+        else texts = value
     }
 
     return (
