@@ -187,6 +187,16 @@ export default {
                 ]
             },
             {
+                'name': 'Resume',
+                'url': 'https://github.com/reumia/resume',
+                'roles': [ 'Front-end Dev.', 'Design' ],
+                'skills': [ 'Firebase', 'Heroku', 'React', 'Webpack', 'SCSS' ],
+                'descriptions': [
+                    'JSON 데이터를 기반으로 개발자를 위한 단일 페이지의 이력서 웹사이트를 만들어주는 도구',
+                    '본 이력서 웹사이트를 구축하는데에 활용'
+                ]
+            },
+            {
                 'name': '정적블로그생성 플랫폼 Hexo의 Theme 개발',
                 'url': 'https://goo.gl/A319ZX',
                 'skills': [ 'HTML', 'SCSS', 'Markdown', 'Node.js' ],
