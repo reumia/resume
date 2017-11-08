@@ -3,6 +3,9 @@
 A tool for creating a single-page resume website for developers based on JSON data.  
 JSON 데이터를 기반으로 개발자를 위한 단일 페이지의 이력서 웹사이트를 만들어주는 도구입니다.
 
+This tool was used to build the [resume web site of the author](https://resume.zzoman.com).  
+이 도구는 [작성자의 이력서 웹사이트](https://resume.zzoman.com)를 구축하는데에 사용되었습니다.
+
 ![](https://reumia.github.io/resume/example.png)
 
 ## Usage
