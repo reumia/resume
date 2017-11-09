@@ -98,7 +98,7 @@ export default {
                 'name': 'LINEPLAY PC Web Diary 개발',
                 'company': 'NHN Technology Services',
                 'roles': [ 'Front-end Dev.' ],
-                'skills': [ 'HTML', 'SCSS', 'jQuery', 'Canvas' ],
+                'skills': [ 'HTML', 'SCSS', 'jQuery' ],
                 'descriptions': [
                     '모바일 게임 LINEPLAY의 SNS 형태의 PC Web Diary 개발',
                     '개발 후 운영인계를 위한 Bootstrap 형태의 모듈화된 UI 가이드 작성'
@@ -178,7 +178,7 @@ export default {
                 'name': 'Resume',
                 'url': 'https://github.com/reumia/resume',
                 'roles': [ 'Front-end Dev.', 'Design' ],
-                'skills': [ 'Firebase', 'Heroku', 'React', 'Webpack', 'SCSS' ],
+                'skills': [ 'React', 'Webpack', 'SCSS' ],
                 'descriptions': [
                     'JSON 데이터를 기반으로 개발자를 위한 단일 페이지의 이력서 웹사이트를 만들어주는 도구',
                     '본 이력서 웹사이트를 구축하는데에 활용'
