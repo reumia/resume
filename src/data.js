@@ -2,7 +2,7 @@ export default {
     profile: {
         name: '조현석',
         startAt: new Date(2013, 2, 1),
-        descriptions: 'Front-end 주력의 JavaScript 개발자입니다.<br/> Naver 서비스의 Markup을 통해 HTML/SCSS의 차별화된 전문성을 쌓았으며, Vue/React 등의 Modern View Framework의 경험과 Back-end와의 협업, Node.js기반의 Express 서버 개발, Client 도구개발 등 JavaScript 생태계를 폭 넓게 경험했습니다.',
+        descriptions: 'Front-end 주력의 JavaScript 개발자입니다.<br/>Naver 서비스의 Markup을 통해 HTML/SCSS의 차별화된 전문성을 쌓았으며, Vue/React 등의 Modern View Framework의 경험과 Node.js Express를 이용한 API WAS 개발, Client 도구개발 등 JavaScript 생태계를 폭 넓게 경험했습니다.  JAVA, PHP 등의 일반적인 Back-end환경과의 협업과 Heroku, Firebase등을 이용한 REST, Serverless 환경 기반 개발 역량을 갖추었습니다.',
         image: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAyzAAAAJDEwODBjMTc4LTRhYWUtNGIxNS04NmYzLWE1MmNkYmMwN2U3Mw.jpg',
         socials: [
             {
@@ -51,6 +51,16 @@ export default {
             }
         ],
         projects: [
+            {
+                'name': '통합 운송 서비스 어플리케이션 웹뷰 개발',
+                'company': 'SK Techx',
+                'roles': [ 'Front-end Dev.' ],
+                'skills': [ 'React', 'Redux', 'Express', 'Node.js', 'Webpack', 'SCSS' ],
+                'descriptions': [
+                    '앱 연동테스트를 위한 Heroku Serveless 개발용 서버 구축 및 운용',
+                    'Node.js Web Server 도입으로 Back-end 개발과의 업무 의존성 제거'
+                ]
+            },
             {
                 'name': '카셰어링 서비스 어플리케이션 웹뷰, 웹서비스, 백오피스 개발',
                 'company': 'SK Techx',
