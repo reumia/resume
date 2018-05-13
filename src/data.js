@@ -30,13 +30,17 @@ export default {
     resume: {
         experiences: [
             {
-                'Front-end': [ 'React', 'Vue', 'Handlebars', 'jQuery', 'VanillaJS', 'ES6', 'Babel', 'Sass', 'HTML' ],
+                'Front-end': [ 'React', 'Angular', 'Vue', 'Handlebars', 'jQuery', 'VanillaJS', 'ES6', 'Babel', 'Sass', 'HTML' ],
                 'Back-end': [ 'Node.js', 'Express', 'mySQL', 'node-orm2' ],
                 'Tools': [ 'Webpack', 'Gulp', 'Git', 'JIRA', 'Lint' ],
                 'Platform': [ 'Firebase', 'Heroku' ]
             }
         ],
         companies: [
+            {
+                'name': 'PUBG Co.',
+                'roles': [ 'Front-end Dev.' ]
+            },
             {
                 'name': 'SK Techx',
                 'roles': [ 'Front-end Dev.' ]
@@ -51,6 +55,18 @@ export default {
             }
         ],
         projects: [
+            {
+                'name': 'Playerunknown\'s Battleground Lobby Store 개편',
+                'company': 'PUBG Co.',
+                'roles': [ 'Front-end Dev.' ],
+                'skills': [ 'Angular', 'Redux', 'SCSS' ],
+            },
+            {
+                'name': 'Mobile용 사내 경제지표 도구 개발',
+                'company': 'PUBG Co.',
+                'roles': [ 'Front-end Dev.', 'UI Design' ],
+                'skills': [ 'React', 'SCSS' ],
+            },
             {
                 'name': '통합 운송 서비스 어플리케이션 웹뷰 개발',
                 'company': 'SK Techx',
