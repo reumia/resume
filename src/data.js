@@ -3,7 +3,7 @@ export default {
         name: '조현석',
         startAt: new Date(2013, 2, 1),
         descriptions: 'Front-end 주력의 JavaScript 개발자입니다.<br/>Naver 서비스의 Markup을 통해 HTML/SCSS의 차별화된 전문성을 쌓았으며, Vue/React 등의 Modern View Framework의 경험과 Node.js Express를 이용한 API WAS 개발, Client 도구개발 등 JavaScript 생태계를 폭 넓게 경험했습니다.  JAVA, PHP 등의 일반적인 Back-end환경과의 협업과 Heroku, Firebase등을 이용한 REST, Serverless 환경 기반 개발 역량을 갖추었습니다.',
-        image: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAyzAAAAJDEwODBjMTc4LTRhYWUtNGIxNS04NmYzLWE1MmNkYmMwN2U3Mw.jpg',
+        image: '/profile-min.png',
         socials: [
             {
                 'name': 'Email',
@@ -20,23 +20,23 @@ export default {
             {
                 'name': 'LinkedIn',
                 'url': 'https://www.linkedin.com/in/hyunsuk-jo-87128310a/'
-            },
-            {
-                'name': 'Project Seolgi',
-                'url': 'http://seolgi.com/'
             }
         ]
     },
     resume: {
         experiences: [
             {
-                'Front-end': [ 'React', 'Angular', 'Vue', 'Handlebars', 'jQuery', 'VanillaJS', 'ES6', 'Babel', 'Sass', 'HTML' ],
-                'Back-end': [ 'Node.js', 'Express', 'mySQL', 'node-orm2' ],
+                'Front-end': [ 'React', 'Angular', 'VanillaJS', 'ES6', 'Babel', 'TypeScript', 'Sass', 'HTML' ],
+                'Back-end': [ 'Node.js', 'Express', 'Koa', 'mySQL', 'node-orm2' ],
                 'Tools': [ 'Webpack', 'Gulp', 'Git', 'JIRA', 'Lint' ],
                 'Platform': [ 'Firebase', 'Heroku' ]
             }
         ],
         companies: [
+            {
+                'name': 'NAVER',
+                'roles': [ 'Front-end Dev.', 'Node.js Server Dev.' ]
+            },
             {
                 'name': 'PUBG Co.',
                 'roles': [ 'Front-end Dev.' ]
@@ -47,7 +47,7 @@ export default {
             },
             {
                 'name': 'NHN Technology Services',
-                'roles': [ 'Front-end Dev.', 'Node.js Dev.' ]
+                'roles': [ 'Front-end Dev.', 'Node.js' ]
             },
             {
                 'name': 'Freeneo',
@@ -55,6 +55,18 @@ export default {
             }
         ],
         projects: [
+            {
+                'name': 'Smartstore React 전환 및 운영',
+                'company': 'NAVER',
+                'roles': [ 'Front-end Dev.', 'Node.js Server Dev,' ],
+                'skills': [ 'React', 'Webpack', 'Typescript', 'ESLint', 'Koa', 'Node.js' ]
+            },
+            {
+                'name': 'Selective 서비스 오픈',
+                'company': 'NAVER',
+                'roles': [ 'Front-end Dev.' ],
+                'skills': [ 'React', 'Webpack', 'ESLint', 'JavaScript' ],
+            },
             {
                 'name': 'Playerunknown\'s Battleground Lobby Store 개편',
                 'company': 'PUBG Co.',
@@ -182,7 +194,6 @@ export default {
         personals: [
             {
                 'name': 'Discordee',
-                'url': 'http://www.discordee.com',
                 'roles': [ 'Front-end Dev.', 'Back-end Dev.', 'Design' ],
                 'skills': [ 'Firebase', 'Heroku', 'React', 'Redux', 'Express', 'Webpack', 'Oauth2', 'i18n', 'SCSS' ],
                 'descriptions': [
@@ -192,7 +203,6 @@ export default {
             },
             {
                 'name': 'ifKiller',
-                'url': 'http://www.ifkiller.com',
                 'roles': [ 'Front-end Dev.' ],
                 'skills': [ 'Handlebars', 'jQuery', 'Webpack', 'SCSS' ],
                 'descriptions': [
